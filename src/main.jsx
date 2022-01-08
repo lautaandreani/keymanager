@@ -8,7 +8,7 @@ const clientId = import.meta.env.VITE_REACT_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.render(
   <React.StrictMode>
-    <Auth0Provider domain={"dev-1jf4gf3t.us.auth0.com"} clientId={"x9f7LZcK7SHCpC4MGkdmwqWvLFg4v8gU"} redirectUri={window.location.origin}>
+    <Auth0Provider domain={domain} clientId={clientId} redirectUri={window.location.origin}>
       <ChakraProvider>
         <App />
       </ChakraProvider>

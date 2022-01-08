@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   const { loginWithRedirect, logout, isAuthenticated, isLoading } = useAuth0();
   return (
-    <Box bg="#16161A" h="100vh">
+    <Box bg="#16161A" h="100vh" className="box">
       {isAuthenticated ? <Home logout={logout} /> : <Login loginWithRedirect={loginWithRedirect} isLoading={isLoading} />}
     </Box>
   );
