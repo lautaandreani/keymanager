@@ -3,8 +3,8 @@ import { ChakraProvider } from "@chakra-ui/react";
 import { Auth0Provider } from "@auth0/auth0-react";
 import ReactDOM from "react-dom";
 import App from "./App";
-const domain = import.meta.env.VITE_AUTH_DOMAIN;
-const clientId = import.meta.env.VITE_CLIENTID_AUTH;
+const domain = import.meta.env.VITE_REACT_APP_AUTH0_DOMAIN;
+const clientId = import.meta.env.VITE_REACT_APP_AUTH0_CLIENT_ID;
 
 ReactDOM.render(
   <React.StrictMode>
